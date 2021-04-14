@@ -31,7 +31,7 @@ const Sdata = [
       link:"https://www.netflix.com/in/title/80044950"
   },
   {
-    imgsrc:"https://wallpapercave.com/wp/wp5696666",
+    imgsrc:"https://wallpapercave.com/wp/wp5696666.jpg",
     title:"A Netflix Original Series",
     sname:"Stranger Things",
     link:"https://www.netflix.com/in/title/80057281"
