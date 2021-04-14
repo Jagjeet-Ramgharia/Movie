@@ -6,7 +6,7 @@ import Sdata from './Sdata';
 
 ReactDOM.render(
   <>
-    <h1 className="heading_style">List of Famous Web Series</h1>
+    <h1 className="heading_style">Easy Content Watch</h1>
 
     <Card
       imgsrc={Sdata[0].imgsrc}
@@ -45,6 +45,42 @@ ReactDOM.render(
       title={Sdata[5].title}
       sname={Sdata[5].sname}
       link={Sdata[5].link}
+    />
+     <Card
+      imgsrc={Sdata[6].imgsrc}
+      title={Sdata[6].title}
+      sname={Sdata[6].sname}
+      link={Sdata[6].link}
+    />
+      <Card
+      imgsrc={Sdata[7].imgsrc}
+      title={Sdata[7].title}
+      sname={Sdata[7].sname}
+      link={Sdata[7].link}
+    />
+      <Card
+      imgsrc={Sdata[8].imgsrc}
+      title={Sdata[8].title}
+      sname={Sdata[8].sname}
+      link={Sdata[8].link}
+    />
+      <Card
+      imgsrc={Sdata[9].imgsrc}
+      title={Sdata[9].title}
+      sname={Sdata[9].sname}
+      link={Sdata[9].link}
+    />
+      <Card
+      imgsrc={Sdata[10].imgsrc}
+      title={Sdata[10].title}
+      sname={Sdata[10].sname}
+      link={Sdata[10].link}
+    />
+      <Card
+      imgsrc={Sdata[11].imgsrc}
+      title={Sdata[11].title}
+      sname={Sdata[11].sname}
+      link={Sdata[11].link}
     />
 
 

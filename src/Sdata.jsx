@@ -31,10 +31,46 @@ const Sdata = [
       link:"https://www.netflix.com/in/title/80044950"
   },
   {
-    imgsrc:"https://wallpapercave.com/wp/wp5696666.jpg",
-    title:"A Netflix Original Series",
-    sname:"Stranger Things",
+    imgsrc:"https://wallpapercave.com/wp/wp2861580.jpg",
+    title:"Warner Brothers",
+    sname:"Batman Begins",
     link:"https://www.netflix.com/in/title/80057281"
-  }
+  },
+  {
+    imgsrc:"https://wallpapercave.com/wp/wp4777456.jpg",
+    title:"Warner Brothers",
+    sname:"The Dark Knight",
+    link:"https://www.netflix.com/in/title/80057281"
+  },
+  {
+    imgsrc:"https://wallpapercave.com/wp/PMGZEmT.jpg",
+    title:"Warner Brothers",
+    sname:"The Dark Knight Rises",
+    link:"https://www.netflix.com/in/title/80057281"
+  },
+  {
+    imgsrc:"https://wallpapercave.com/wp/wp1817975.jpg",
+    title:"Warner Brothers",
+    sname:"Interstellar",
+    link:"https://www.netflix.com/in/title/80057281"
+  },
+  {
+    imgsrc:"https://wallpapercave.com/wp/wp5053230.jpg",
+    title:"Warner Brothers",
+    sname:"TENET",
+    link:"https://www.netflix.com/in/title/80057281"
+  },
+  {
+    imgsrc:"https://wallpapercave.com/wp/wp2073458.jpg",
+    title:"Columbia Pictures",
+    sname:"Shutter Island",
+    link:"https://www.netflix.com/in/title/80057281"
+  },
+  {
+  imgsrc:"https://wallpapercave.com/wp/TycsOQ6.jpg",
+  title:"Warner Brothers",
+  sname:"Inception",
+  link:"https://www.netflix.com/in/title/80057281"
+}
 ];
 export default Sdata;
