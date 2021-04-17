@@ -1,16 +1,17 @@
 import React from "react";
 
 const Footer = () => {
+  
   return (
     <>
-      <div className="footer">
+      <div className="footer" >
         <div className="col1">
-          <h1>EasyContentWatch</h1>
-          <p> &copy; EasyContentWatch | Designed by Jagjeet Ramgharia</p>
+          <h1>EasyContentWatch 🏂</h1>
+          <p> &copy; EasyContentWatch  | Designed by Jagjeet Ramgharia</p>
           <p>Under Development 🛩️</p>
         </div>
         <div className="col1">
-          <h1>Live TV</h1>
+          <h1>Live TV 📺</h1>
           <ul>
             <li>
               <a href="http://123tvnow.com/watch/amc/" target="_blank">
@@ -27,15 +28,29 @@ const Footer = () => {
                 NFL
               </a>
             </li>
+            <li>
+              <a href="http://123tvnow.com/watch/espn-news/" target="_blank">
+                ESPN
+              </a>
+            </li>
+            <li>
+              <a href="http://123tvnow.com/watch/trutv/" target="_blank">
+                TRUTV
+              </a>
+            </li>
           </ul>
         </div>
 
         <div className="col1">
-          <h1>Search</h1>
-          <input type="text" placeholder="Search..." className="search-bar"/>
+          <h1>Socials 🧑‍🤝‍🧑</h1>
+          <ul>
+            <li><a href="https://github.com/Jagjeet-Ramgharia">Github</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://www.instagram.com/ramgharia_jagjeet/">Instagram</a></li>
+          </ul>
         </div>
       </div>
-
     </>
   );
 };
