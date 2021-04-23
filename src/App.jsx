@@ -7,8 +7,8 @@ import Sdata from "./Sdata";
 import Footer from "./Footer";
 
 const App = () => {
-  const bgcchane = "#8e44ad"
-  const bgcnormal = "#000000"
+  const bgcchane = "#8e44ad";
+  const bgcnormal = "#000000";
   const heading = "#fff";
   const purple = "#d2dbdd";
   const [bg, setBg] = useState(purple);
@@ -45,23 +45,32 @@ const App = () => {
           </button>
         </div>
         <div className="nav-container">
-        <div className="menu">
-          <a href="http://123tvnow.com/watch/amc/" target="_blank">
-            <button className="btn">AMC</button>
-          </a>
-          <a href="http://123tvnow.com/?s=hbo" target="_blank">
-            <button className="btn">HBO</button>
-          </a>
-          <a href="http://123tvnow.com/watch/nfl-network/" target="_blank">
-            <button className="btn">NFL</button>
-          </a>
-          <a href="http://123tvnow.com/watch/espn-news/" target="_blank">
-            <button className="btn">ESPN</button>
-          </a>
-          <a href="http://123tvnow.com/watch/trutv/" target="_blank">
-            <button className="btn">TRU</button>
-          </a>
+          <div className="menu">
+            <a href="http://123tvnow.com/watch/amc/" target="_blank">
+              <button className="btn">AMC</button>
+            </a>
+            <a href="http://123tvnow.com/?s=hbo" target="_blank">
+              <button className="btn">HBO</button>
+            </a>
+            <a href="http://123tvnow.com/watch/nfl-network/" target="_blank">
+              <button className="btn">NFL</button>
+            </a>
+            <a href="http://123tvnow.com/watch/espn-news/" target="_blank">
+              <button className="btn">ESPN</button>
+            </a>
+            <a href="http://123tvnow.com/watch/trutv/" target="_blank">
+              <button className="btn">TRU</button>
+            </a>
+          </div>
         </div>
+        <div className="select-option">
+          <select className="select">
+            <option>All</option>
+            <option>Netflix</option>
+            <option>HBO</option>
+            <option>Ski-Fi</option>
+            <option>Adventure</option>
+          </select>
         </div>
 
         {Sdata.map((val) => {
@@ -75,7 +84,7 @@ const App = () => {
           );
         })}
 
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

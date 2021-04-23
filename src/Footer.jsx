@@ -44,10 +44,10 @@ const Footer = () => {
         <div className="col1">
           <h1>Socials 🧑‍🤝‍🧑</h1>
           <ul>
-            <li><a href="https://github.com/Jagjeet-Ramgharia">Github</a></li>
+            <li><a href="https://github.com/Jagjeet-Ramgharia" target="_blank">Github</a></li>
           </ul>
           <ul>
-            <li><a href="https://www.instagram.com/ramgharia_jagjeet/">Instagram</a></li>
+            <li><a href="https://www.instagram.com/ramgharia_jagjeet/" target="_blank">Instagram</a></li>
           </ul>
         </div>
       </div>

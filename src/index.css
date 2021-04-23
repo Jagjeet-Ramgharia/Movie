@@ -4,6 +4,87 @@
   box-sizing: border-box;
   /* background-color: #d2dbdd; */
 }
+/*code for todolist app*/
+/* .main_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8e44ad;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+}
+.center_div{
+  width: 25%;
+  height: 80vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+h1{
+  background-color: #ff006e;
+  color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  font-size: bolder;
+}
+input{
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ff006e;
+  margin-top: 20px;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+.todo{
+  margin-left: 20px;
+  min-height: 40px;
+  width: 40px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: transparent;
+  font-size: 20px;
+  background-color: #8566aa;
+  color: whitesmoke;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,.5);
+}
+.todo:hover{
+  background-color: #20bf6b;
+}
+ol{
+  margin-top: 30px;
+}
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #8566aa;
+  text-transform: capitalize;
+}
+.listbutton{
+  float: left;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: #8e44ad;
+  color: whitesmoke;
+  align-content: center;
+}
+.listbutton:hover{
+  background-color: red;
+} */
+
 .header {
   background-color: #fff;
   display: flex;
@@ -15,7 +96,7 @@
   border: 2px solid #8e44ad;
   border-radius: 10px;
   padding: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .search:hover {
   padding: 20px;
@@ -55,7 +136,7 @@
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
-.nav-container{
+.nav-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,7 +157,6 @@
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
-
   font-size: 20px;
   padding: 20px;
   background-color: #8e44ad;
@@ -85,6 +165,26 @@
   transform: scale(1.05, 1.05);
   transition: all 0.4s ease-in-out;
 }
+.select-option {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.select {
+  width: 300px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2px;
+  border-bottom: 2px solid #8e44ad;
+  background-color: #d2dbdd;
+  font-family: "Ubuntu", sans-serif;
+  overflow: hidden;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
 .cards {
   width: 100%;
   height: auto;
@@ -151,7 +251,7 @@ button {
   cursor: pointer;
 }
 .footer {
-  background-color: black;
+  background-color: #8e44ad;
   bottom: 0;
   height: 200px;
   width: 100%;
@@ -160,44 +260,35 @@ button {
   border: 1px solid grey;
 }
 .footer .col1 {
-  background-color: black;
+  background-color: #8e44ad;
 }
 .footer .col1 > h1 {
   margin-top: 10px;
-  color: #ff006e;
-  background-color: black;
+  color: #161a1d;
+  background-color: #8e44ad;
 }
 .footer .col1 > ul {
   margin-top: 10px;
 }
 .footer .col1 > ul > li {
-  background-color: black;
+  background-color: #8e44ad;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .footer .col1 > ul > li > a {
-  background-color: black;
+  background-color: #8e44ad;
   text-decoration: none;
-  color: #8e44ad;
+  color: whitesmoke;
   font-size: 15px;
 }
 
 .footer .col1 > p {
   margin-top: 15px;
-  color: #8e44ad;
-  background-color: black;
-}
-.footer .search-bar {
-  outline: none;
-  border: 2px solid #8e44ad;
-  border-radius: 10px;
-  margin-top: 10px;
-  padding: 7px;
-  cursor: pointer;
-}
-.footer .search-bar:hover {
-  padding: 10px;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
+  color: whitesmoke;
+  background-color: #8e44ad;
+  /* font-size: 16px; */
+  /* font-weight: bolder; */
 }
 
 @media (max-width: 768px) {
@@ -224,4 +315,16 @@ button {
     border-radius: 20px;
     padding: 20px;
   }
+  .card {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  .select {
+    width: auto;
+  }
+  .center_div{
+    width: 70%;
+    overflow: hidden;
+  }
+
 }
