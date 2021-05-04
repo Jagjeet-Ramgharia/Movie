@@ -341,7 +341,7 @@ button {
   .footer {
     flex-direction: column;
     overflow: auto;
-    height: 200px;
+    height: 400px;
   }
   .footer .search-bar {
     margin-bottom: 5px;
