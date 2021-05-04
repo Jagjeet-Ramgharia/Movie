@@ -339,7 +339,7 @@ button {
     margin: 5%;
   }
   .footer {
-    /* flex-direction: column; */
+    flex-direction: column;
     overflow: auto;
     height: 200px;
   }
