@@ -357,10 +357,10 @@ button {
     border-radius: 20px;
     padding: 20px;
   }
-  .card {
+  /* .card {
     width: 40%;
     flex-wrap: wrap;
-  }
+  } */
   .select {
     width: auto;
   }
