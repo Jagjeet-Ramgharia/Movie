@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import Amazon from "./Amazon";
 import Card from "./Cards";
 import "./index.css";
-import Netflix from "./Netflix";
 import Sdata from "./Sdata";
 import Footer from "./Footer";
+import Mcategory from './Mcategory';
+
+// const allCatValues = [ ... new Set(
+//   Sdata.map((currElem) => {
+//     return currElem.title;
+//   })
+// )];
+
+// console.log(allCatValues);
 
 const App = () => {
   const bgcchane = "#8e44ad";
@@ -15,6 +22,8 @@ const App = () => {
   const [hed, setHed] = useState(heading);
   const [name, setName] = useState("Dark");
   const [bgc, setBgc] = useState(bgcnormal);
+  const [find, setFind] = useState("");
+  const [items, setItems] = useState(Sdata);
   const darkMode = () => {
     let newbg = "#000000";
     setBg(newbg);
@@ -27,6 +36,16 @@ const App = () => {
     setHed(heading);
     setName("Dark");
   };
+  const searchEvent = (event) => {
+    const data = event.target.value;
+    setFind(data);
+  };
+  const filterItems = (category) => {
+    const updateItems = Sdata.filter((currentElem) => {
+      return currentElem.title === category;
+    });
+    setItems(updateItems);
+  };
 
   return (
     <>
@@ -35,7 +54,13 @@ const App = () => {
           <h1 className="heading_style" style={{ backgroundColor: hed }}>
             Easy Content Watch 🏂
           </h1>
-          <input type="text" placeholder="SEARCH..." className="search" />
+          <input
+            type="text"
+            placeholder="SEARCH..."
+            className="search"
+            onChange={searchEvent}
+            value={find}
+          />
           <button
             className="header-btn"
             onClick={darkMode}
@@ -63,17 +88,10 @@ const App = () => {
             </a>
           </div>
         </div>
-        <div className="select-option">
-          <select className="select">
-            <option>All</option>
-            <option>Netflix</option>
-            <option>HBO</option>
-            <option>Ski-Fi</option>
-            <option>Adventure</option>
-          </select>
-        </div>
 
-        {Sdata.map((val) => {
+            <Mcategory filterItems={filterItems} setItems={setItems}/>
+
+        {items.map((val) => {
           return (
             <Card
               imgsrc={val.imgsrc}

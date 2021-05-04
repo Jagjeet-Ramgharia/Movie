@@ -165,7 +165,36 @@ ol li{
   transform: scale(1.05, 1.05);
   transition: all 0.4s ease-in-out;
 }
-.select-option {
+.category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.category_btn {
+  width: auto;
+  padding: 12px;
+  margin-top: 10px;
+  /* margin-left: 20px; */
+  border: 1px solid white;
+  background-color: #8e44ad;
+  height: 10vh;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.2);
+}
+.category_btn:hover {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #8e44ad;
+  border-radius: 10px;
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05, 1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+/* .select-option {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -183,7 +212,7 @@ ol li{
   overflow: hidden;
   text-transform: capitalize;
   cursor: pointer;
-}
+} */
 
 .cards {
   width: 100%;
@@ -259,36 +288,49 @@ button {
   justify-content: space-around;
   border: 1px solid grey;
 }
-.footer .col1 {
+.footer .col1,
+.col2,
+.col3 {
   background-color: #8e44ad;
 }
-.footer .col1 > h1 {
-  margin-top: 10px;
+.footer .col1,
+.col2,
+.col3 > h1 {
+  /* margin-top: 10px; */
   color: #161a1d;
   background-color: #8e44ad;
 }
-.footer .col1 > ul {
-  margin-top: 10px;
-}
-.footer .col1 > ul > li {
-  background-color: #8e44ad;
-  font-size: 16px;
-  font-weight: bolder;
-}
 
-.footer .col1 > ul > li > a {
+.footer .col2 > a {
   background-color: #8e44ad;
   text-decoration: none;
   color: whitesmoke;
+  font-weight: bold;
   font-size: 15px;
 }
 
 .footer .col1 > p {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   color: whitesmoke;
   background-color: #8e44ad;
   /* font-size: 16px; */
   /* font-weight: bolder; */
+}
+.footer .col3 > a{
+  margin: 0 4px;
+  color: white;
+}
+.fa-github {
+  font-size: 30px;
+}
+.fa-instagram {
+  font-size: 30px;
+}
+.footer_bottom {
+  background-color: #8e44ad;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 @media (max-width: 768px) {
@@ -297,9 +339,9 @@ button {
     margin: 5%;
   }
   .footer {
-    flex-direction: column;
+    /* flex-direction: column; */
     overflow: auto;
-    height: 400px;
+    height: 200px;
   }
   .footer .search-bar {
     margin-bottom: 5px;
@@ -322,9 +364,8 @@ button {
   .select {
     width: auto;
   }
-  .center_div{
+  .center_div {
     width: 70%;
     overflow: hidden;
   }
-
 }
