@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Card from "./Cards";
 import "./index.css";
 import Sdata from "./Sdata";
@@ -14,6 +14,20 @@ import Mcategory from './Mcategory';
 // console.log(allCatValues);
 
 const App = () => {
+  const [dark,setDark] =useState(false);
+  useEffect(() => {
+      if(dark){
+        let newbg = "#000000";
+        setBg(newbg);
+        setHed(newbg);
+        setName("Light");
+        setBgc(bgcchane);
+      }else{
+        setBg(purple);
+        setHed(heading);
+        setName("Dark");
+      }
+  }, [dark])
   const bgcchane = "#8e44ad";
   const bgcnormal = "#000000";
   const heading = "#fff";
@@ -24,18 +38,7 @@ const App = () => {
   const [bgc, setBgc] = useState(bgcnormal);
   const [find, setFind] = useState("");
   const [items, setItems] = useState(Sdata);
-  const darkMode = () => {
-    let newbg = "#000000";
-    setBg(newbg);
-    setHed(newbg);
-    setName("Normal");
-    setBgc(bgcchane);
-  };
-  const normalMode = () => {
-    setBg(purple);
-    setHed(heading);
-    setName("Dark");
-  };
+
   const searchEvent = (event) => {
     const data = event.target.value;
     setFind(data);
@@ -63,8 +66,7 @@ const App = () => {
           />
           <button
             className="header-btn"
-            onClick={darkMode}
-            onDoubleClick={normalMode}
+            onClick={()=> setDark((pre)=>!pre)}
           >
             {name}
           </button>
