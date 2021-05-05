@@ -84,5 +84,6 @@ const Sdata = [
     sname: "Inception",
     link: "https://www.netflix.com/in/title/80057281",
   },
+  
 ];
 export default Sdata;

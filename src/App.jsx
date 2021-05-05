@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: bg }}>
+      <div className="main_body" style={{ backgroundColor: bg }}>
         <div className="header" style={{ backgroundColor: hed }}>
           <h1 className="heading_style" style={{ backgroundColor: hed }}>
             Easy Content Watch 🏂

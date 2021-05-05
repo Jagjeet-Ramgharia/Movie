@@ -6,10 +6,11 @@ const Footer = () => {
       <div className="footer">
         <div className="col1">
           <h1>Services</h1>
-          <p>
-            &copy; EasyContentWatch <br /> Designed by Jagjeet Ramgharia
-          </p>
-          <p>Under Development 🛩️</p>
+          <h2>Web Series</h2>
+          <h2>Movies</h2>
+          <h2>HollyWood</h2>
+          <h2>BollyWood</h2>
+          
         </div>
         <div className="col2">
           <h1>Live TV</h1>

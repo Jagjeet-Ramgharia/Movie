@@ -4,6 +4,10 @@
   box-sizing: border-box;
   /* background-color: #d2dbdd; */
 }
+body{
+  display: flex;
+
+}
 /*code for todolist app*/
 /* .main_div{
   display: flex;
@@ -194,26 +198,6 @@ ol li{
   transition: all 0.4s ease-in-out;
 }
 
-/* .select-option {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.select {
-  width: 300px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  margin-top: 2px;
-  border-bottom: 2px solid #8e44ad;
-  background-color: #d2dbdd;
-  font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
-  text-transform: capitalize;
-  cursor: pointer;
-} */
-
 .cards {
   width: 100%;
   height: auto;
@@ -282,57 +266,62 @@ button {
 .footer {
   background-color: #8e44ad;
   bottom: 0;
-  height: 200px;
+  height: 250px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   border: 1px solid grey;
 }
-.footer .col1,
-.col2,
-.col3 {
-  background-color: #8e44ad;
-}
-.footer .col1,
-.col2,
-.col3 > h1 {
-  /* margin-top: 10px; */
-  color: #161a1d;
-  background-color: #8e44ad;
-}
-
-.footer .col2 > a {
-  background-color: #8e44ad;
-  text-decoration: none;
+.footer .col1 > h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bolder;
   color: whitesmoke;
-  font-weight: bold;
+  margin: 20px 0;
+}
+.footer .col1 > h2{
+  text-transform: uppercase;
   font-size: 15px;
+  color: #b7b7a4;
+  margin-top: 10px;
 }
-
-.footer .col1 > p {
-  /* margin-top: 15px; */
+.footer .col2 > h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bolder;
   color: whitesmoke;
-  background-color: #8e44ad;
-  /* font-size: 16px; */
-  /* font-weight: bolder; */
+  margin: 20px 0;
 }
-.footer .col3 > a{
-  margin: 0 4px;
-  color: white;
+.footer .col2 > a{
+  text-decoration: none;
+  color: #b7b7a4;
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
-.fa-github {
+.footer .col3 > h1{
+  text-transform: uppercase;
   font-size: 30px;
+  font-weight: bolder;
+  color: whitesmoke;
+  margin: 20px 0;
 }
-.fa-instagram {
-  font-size: 30px;
+.fa-github{
+  font-size: 40px;
+  margin-left: 10px;
+  color: black;
 }
-.footer_bottom {
+.fa-instagram{
+  font-size: 40px;
+  margin-left: 10px;
+  color: black;
+}
+.footer_bottom{
   background-color: #8e44ad;
   text-align: center;
-  font-size: 20px;
   font-weight: bolder;
 }
-
 @media (max-width: 768px) {
   .card {
     width: 90%;
@@ -341,7 +330,28 @@ button {
   .footer {
     flex-direction: column;
     overflow: auto;
-    height: 400px;
+    height: 500px;
+  }
+  .footer .col1 > h1{
+    margin-left: 10px;
+  }
+  .footer .col1 > h2{
+    margin-left: 10px;
+  }
+  .footer .col2 > h1{
+    margin-left: 10px;
+  }
+  .footer .col2 > a{
+    margin-left: 10px;
+  }
+  .footer .col3 > h1{
+    margin-left: 10px;
+  }
+  .footer .col3 >.fa-github {
+    margin-left: 10px;
+  }
+  .footer .col3 >.fa-instagram {
+    margin-left: 10px;
   }
   .footer .search-bar {
     margin-bottom: 5px;
